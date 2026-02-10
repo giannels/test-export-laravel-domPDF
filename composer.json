@@ -1,5 +1,5 @@
 {
-    "name": "nelson/export-test",
+    "name": "giannels/test-result-laravel",
     "autoload": {
         "psr-4": {
             "Nelson\\ExportTest\\": "src/"
