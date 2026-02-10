@@ -1,0 +1,14 @@
+{
+    "name": "nelson/export-test",
+    "autoload": {
+        "psr-4": {
+            "Nelson\\ExportTest\\": "src/"
+        }
+    }
+
+    "require": {
+        "barryvdh/laravel-dompdf": "^2.0",
+        "php": "^8.0",
+        "illuminate/support": "^9.0"
+    }
+}
