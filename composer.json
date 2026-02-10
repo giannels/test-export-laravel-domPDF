@@ -1,5 +1,5 @@
 {
-    "name": "nelson/export-test",
+    "name": "giannels/test-export=laravel=domPDF",
     "autoload": {
         "psr-4": {
             "Nelson\\ExportTest\\": "src/"
@@ -15,4 +15,5 @@
     "require": {
         "barryvdh/laravel-dompdf": "^2.0"
     }
+
 }
