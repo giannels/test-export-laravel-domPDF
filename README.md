@@ -1,6 +1,6 @@
 # RESULT TEST LARAVEL
 
-Laravel Test Result Export adalah paket elegan yang membantu Anda menjalankan pengujian dan merangkum hasilnya ke dalam format JSON serta PDF secara otomatis. Sangat cocok untuk dokumentasi laporan magang, audit proyek, atau sekadar memantau kesehatan aplikasi Anda.
+Laravel Test Result Export adalah paket elegan yang membantu Anda menjalankan pengujian dan merangkum hasilnya ke dalam format JSON serta PDF secara otomatis. Sangat cocok untuk dokumentasi hasil test atau sekadar memantau kesehatan aplikasi Anda.
 
 # 🛠 Instalasi
 Ikuti langkah-langkah di bawah ini untuk mengintegrasikan paket ke dalam proyek Laravel Anda:
