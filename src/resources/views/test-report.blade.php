@@ -199,8 +199,6 @@
         </table>
     </div>
 
-    <div class="page-break"></div>
-
     @foreach($results ?? collect([]) as $category => $tests)
         <div class="category-header">
             Detail: {{ $category }} ({{ count($tests) }} tests)
