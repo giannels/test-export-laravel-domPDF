@@ -229,7 +229,6 @@
                 @endforeach
             </tbody>
         </table>
-        <div class="page-break"></div>
     @endforeach
 
     <div class="footer">
