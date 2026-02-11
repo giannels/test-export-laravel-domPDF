@@ -116,7 +116,7 @@
             font-size: 10px;
             color: #7f8c8d;
             border-top: 2px solid #ddd;
-            padding-top: auto;
+            padding-top: 10px;
         }
         .page-break {
             page-break-after: auto;
