@@ -3,7 +3,7 @@
     "license": "MIT",
     "description": "Package untuk export hasil test Laravel ke PDF",
     "type": "library",
-    "homepage": "https://github.com/giannels/test-result-laravel",
+    "description": "https://github.com/giannels/test-result-laravel",
     
     
     "autoload": {
