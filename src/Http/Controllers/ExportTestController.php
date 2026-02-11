@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Giannels\TestResultLaravel\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Artisan;
+use App\Http\Controllers\Controller;
 
-class TestReportController extends Controller
+class ExportTestController extends Controller
 {
     private $jsonPath;
 
@@ -28,7 +29,7 @@ class TestReportController extends Controller
         }
 
         // Nama view diarahkan ke lokasi standar resources/views/pdf
-        $pdf = Pdf::loadView('pdf.test-report', $data)->setPaper('a4', 'portrait');
+        $pdf = Pdf::loadView('test-result-pkg::test-report', $data)->setPaper('a4', 'portrait');
         return $pdf->download('Test-Report-Final.pdf');
     }
 
@@ -39,7 +40,7 @@ class TestReportController extends Controller
             return response()->json(['error' => 'Data tidak ditemukan.'], 404);
         }
 
-        $pdf = Pdf::loadView('pdf.test-report', $data)->setPaper('a4', 'portrait');
+        $pdf = Pdf::loadView('test-result-pkg::test-report', $data)->setPaper('a4', 'portrait');
         return $pdf->stream('Test-Report-Preview.pdf');
     }
 
