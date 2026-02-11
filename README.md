@@ -28,9 +28,8 @@ PHP
 Agar perubahan terbaca dengan sempurna, bersihkan cache view dan konfigurasi Anda:
 
 Bash
-php artisan view:clear
-
-php artisan config:clear
+'php artisan view:clear'
+'php artisan config:clear'
 
 
 🚀 Cara Penggunaan
