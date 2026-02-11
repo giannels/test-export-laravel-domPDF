@@ -64,5 +64,5 @@ Download PDF: Akses http://127.0.0.1:8000/test-result/download.
 
 
 # 📝 Lisensi
-Paket ini bersifat open-source.
+Paket ini bersifat open-source di bawah lisensi MIT.
 Dibuat oleh Giannels
