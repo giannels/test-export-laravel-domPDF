@@ -22,8 +22,7 @@ class TestResultServiceProvider extends ServiceProvider
         // Cek apakah aplikasi dijalankan lewat terminal (CLI)
         if ($this->app->runningInConsole()) {
             $this->commands([
-                // Daftarkan class Command Anda di sini
-                // Contoh: \Giannels\TestResultLaravel\Commands\TestExportCommand::class,
+                \Giannels\TestResultLaravel\Commands\ExportTestCommand::class,
             ]);
         }
     }

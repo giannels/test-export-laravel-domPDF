@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Giannels\TestResultLaravel\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File; 
 use Symfony\Component\Process\Process;
 
-class RunTestsAndExport extends Command
+class ExportTestCommand extends Command
 {
     /**
      * Signature diubah agar menerima argument 'folders' opsional.
