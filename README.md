@@ -1,7 +1,7 @@
 # RESULT TEST LARAVEL
 
-🚀 Laravel Test Result Exporter
-Laravel Test Result Exporter adalah paket elegan yang membantu Anda menjalankan pengujian (automated tests) dan merangkum hasilnya ke dalam format JSON serta PDF secara otomatis. Sangat cocok untuk dokumentasi laporan magang, audit proyek, atau sekadar memantau kesehatan aplikasi Anda.
+Laravel Test Result Export
+Laravel Test Result Export adalah paket elegan yang membantu Anda menjalankan pengujian dan merangkum hasilnya ke dalam format JSON serta PDF secara otomatis. Sangat cocok untuk dokumentasi laporan magang, audit proyek, atau sekadar memantau kesehatan aplikasi Anda.
 
 # 🛠 Instalasi
 Ikuti langkah-langkah di bawah ini untuk mengintegrasikan paket ke dalam proyek Laravel Anda:
@@ -14,7 +14,7 @@ composer require giannels/test-result-laravel
 2. Registrasi Service Provider
 Buka file config/app.php dan tambahkan TestResultServiceProvider ke dalam array providers. Langkah ini memastikan Laravel mengenali perintah dan rute dari paket ini.
 
-PHP
+<?php
 'providers' => ServiceProvider::defaultProviders()->merge([
     // ... Provider lainnya
     
@@ -23,7 +23,7 @@ PHP
      */
     Giannels\TestResultLaravel\TestResultServiceProvider::class,
 ])->toArray(),
-
+?>
 
 3. Refresh Konfigurasi
 Agar perubahan terbaca dengan sempurna, bersihkan cache view dan konfigurasi Anda:
