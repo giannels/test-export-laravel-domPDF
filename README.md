@@ -32,28 +32,34 @@ Buka file config/app.php dan tambahkan TestResultServiceProvider ke dalam array 
 Agar perubahan terbaca dengan sempurna, bersihkan cache view dan konfigurasi Anda:
 
 ```bash
-'php artisan view:clear'
-'php artisan config:clear'
+php artisan view:clear
+php artisan config:clear
 ```
 
 # 🚀 Cara Penggunaan
 Menjalankan Test & Export
 Untuk menjalankan seluruh test sekaligus mengekspor hasilnya, cukup jalankan satu perintah:
+```bash
 php artisan test:export
-
+```
 
 Melihat Hasil Laporan
 Setelah perintah selesai dijalankan, Anda dapat mengakses laporan dalam beberapa format:
 
 JSON: File akan tersimpan di storage/app/testing/test-results.json.
+
 Preview PDF: Buka browser dan akses http://127.0.0.1:8000/test-result/preview.
+
 Download PDF: Akses http://127.0.0.1:8000/test-result/download.
 
 
 # 📊 Fitur Utama
 ✅ Auto-Parsing: Mengubah output terminal PHPUnit yang rumit menjadi data JSON yang rapi.
+
 ✅ Visual Report: Menghasilkan laporan PDF yang cantik menggunakan DomPDF.
+
 ✅ Summary Stats: Menampilkan statistik Passed, Failed, dan Risky secara instan.
+
 ✅ Category Grouping: Hasil test dikelompokkan berdasarkan Class untuk memudahkan pembacaan.
 
 
